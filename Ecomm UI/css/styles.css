@@ -1,0 +1,469 @@
+/* =======================
+   Global Theme Colors
+   ======================= */
+:root {
+  --primary-color: #ff6600; /* Vibrant Orange */
+  --secondary-color: #18181b; /* Even Darker Gray for modern look */
+  --text-color: #e5e7eb; /* Lighter Text */
+  --footer-text: #a1a1aa; /* Footer Text (Modern) */
+  --hover-color: #ff8533; /* Lighter Orange */
+  --white: #fff; /* White Text */
+  --navbar-bg: #232323;
+  --accent-color: #22d3ee; /* Tailwind cyan-400 for accent */
+}
+
+/* =======================
+       Navbar Styling (Modern)
+       ======================= */
+.navbar {
+  background: var(--navbar-bg) !important;
+  padding: 18px 32px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1.5px solid #262626;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color) !important;
+  letter-spacing: 1.5px;
+}
+
+.nav-link {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--white) !important;
+  margin: 0 14px;
+  transition: color 0.2s;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
+  background: rgba(255, 102, 0, 0.08);
+}
+
+.cart-badge {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 7px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+/* =======================
+       Hero Section (Carousel)
+       ======================= */
+#heroCarousel .carousel-inner {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 32px rgba(34, 34, 34, 0.18);
+}
+
+#heroCarousel .carousel-caption {
+  background: rgba(24, 24, 27, 0.65);
+  padding: 32px 24px;
+  border-radius: 1rem;
+  max-width: 420px;
+  left: 10%;
+  right: auto;
+  text-align: left;
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+}
+
+.carousel-caption p {
+  font-size: 1.15rem;
+  color: #f3f4f6;
+  margin-bottom: 1rem;
+}
+
+.carousel-caption .btn {
+  margin-top: 10px;
+  background: var(--primary-color);
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 16px rgba(255, 102, 0, 0.18);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.carousel-caption .btn:hover {
+  background: var(--accent-color);
+  color: #18181b;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Carousel Controls Modern */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0.85;
+}
+
+/* =======================
+       Quick Navigation Buttons
+       ======================= */
+a.bg-green-500,
+a.bg-yellow-400 {
+  box-shadow: 0 4px 16px rgba(34, 211, 238, 0.08),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+a.bg-green-500:hover,
+a.bg-yellow-400:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.16),
+    0 4px 16px rgba(255, 102, 0, 0.16);
+}
+
+/* =======================
+       Features Section
+       ======================= */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.grid-cols-1.md\:grid-cols-3 {
+  gap: 2.5rem;
+}
+
+.bg-white.rounded-xl.shadow-md.p-8 {
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #fff 80%, #f3f4f6 100%);
+  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.06),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.bg-white.rounded-xl.shadow-md.p-8:hover {
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.14),
+    0 4px 16px rgba(255, 102, 0, 0.14);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.bg-white .text-4xl {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.bg-white h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #18181b;
+}
+
+.bg-white p {
+  color: #52525b;
+  font-size: 1rem;
+}
+
+/* =======================
+       Footer Styling (Modern)
+       ======================= */
+.footer {
+  background: var(--secondary-color);
+  color: var(--footer-text);
+  padding: 56px 0 24px 0;
+  font-size: 15px;
+  text-align: center;
+  border-top: 2px solid #232323;
+}
+
+.footer h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  color: var(--footer-text);
+  line-height: 1.7;
+}
+
+.footer ul li a {
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer ul li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 32px;
+  font-size: 1rem;
+  color: var(--footer-text);
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* =======================
+       Responsive Tweaks
+       ======================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 8px;
+  }
+  .carousel-caption {
+    left: 0 !important;
+    right: 0 !important;
+    max-width: 100% !important;
+    padding: 18px 8px !important;
+    text-align: center !important;
+  }
+  .footer .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* =======================
+   Hide Scrollbar for Modern Look
+   ======================= */
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #232323;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 8px;
+}
+
+/* Section backgrounds */
+.bg-white\/80 {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(90deg, #fff7ed 0%, #f3f4f6 50%, #fce7f3 100%);
+}
+
+/* Card enhancements */
+.shadow-xl {
+  box-shadow: 0 8px 32px rgba(255, 102, 0, 0.08),
+    0 2px 8px rgba(34, 211, 238, 0.08);
+}
+.shadow-2xl {
+  box-shadow: 0 16px 48px rgba(255, 102, 0, 0.14),
+    0 4px 16px rgba(34, 211, 238, 0.14);
+}
+.border-orange-100 {
+  border-color: #ffedd5;
+}
+
+/* Button ring effect */
+.ring-2 {
+  box-shadow: 0 0 0 2px #fed7aa;
+}
+
+/* =======================
+       Search Bar Styling
+       ======================= */
+.search-bar {
+  border-radius: 9999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.search-bar:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 9999px;
+}
+
+/* =======================
+       Category Highlights
+       ======================= */
+.category-highlights {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff 0%, #f3f4f6 100%);
+  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.06),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-highlights:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.14),
+    0 4px 16px rgba(255, 102, 0, 0.14);
+}
+
+/* =======================
+       Product Sections
+       ======================= */
+.product-section {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.06),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.14),
+    0 4px 16px rgba(255, 102, 0, 0.14);
+}
+
+/* =======================
+       Testimonial Section
+       ======================= */
+.testimonial-section {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.testimonial-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* =======================
+       Newsletter Section
+       ======================= */
+.newsletter-section {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff7ed 0%, #f3f4f6 50%, #fce7f3 100%);
+  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.06),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.newsletter-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.14),
+    0 4px 16px rgba(255, 102, 0, 0.14);
+}
+
+/* =======================
+       Brand Logos Section
+       ======================= */
+.brand-logos-section {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.06),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.brand-logos-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.14),
+    0 4px 16px rgba(255, 102, 0, 0.14);
+}
+
+/* =======================
+       Features/Trust Badges Section
+       ======================= */
+.features-section {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 50%, #fff7ed 100%);
+  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.06),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.features-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.14),
+    0 4px 16px rgba(255, 102, 0, 0.14);
+}
+
+/* Card backgrounds for more depth and contrast */
+.bg-white,
+.bg-white\/90 {
+  background: #f9fafb;
+}
+
+.shadow-md,
+.shadow-lg,
+.shadow-xl {
+  box-shadow: 0 4px 24px rgba(34, 34, 34, 0.08),
+    0 2px 8px rgba(255, 102, 0, 0.08);
+}
+
+.rounded-xl {
+  border: 1.5px solid #f3f4f6;
+}
+
+/* Make Add to Cart and Search buttons more visible */
+.bg-orange-500 {
+  background-color: #fb923c !important;
+  color: #fff !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 2px 8px rgba(251, 146, 60, 0.15);
+}
+
+.bg-orange-500:hover {
+  background-color: #ea580c !important;
+  color: #fff !important;
+}
+
+/* For input backgrounds */
+.bg-gray-100 {
+  background-color: #f3f4f6 !important;
+}
